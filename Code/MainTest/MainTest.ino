@@ -18,10 +18,10 @@ Servo myservo;
 int pos = 0;
  
 void setup() {
-  myservo.attach(4); // Attach the servo to the pin
-  myservo.write(0); // Move to closed position
+  myservo.attach(4);    // Attach the servo to the pin
+  myservo.write(0);     // Move to closed position
   Serial.begin(9600);   // Initiate a serial communication
-  SPI.begin();      // Initiate  SPI bus
+  SPI.begin();          // Initiate  SPI bus
   mfrc522.PCD_Init();   // Initiate MFRC522
 }
 
